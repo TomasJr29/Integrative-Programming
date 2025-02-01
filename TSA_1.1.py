@@ -12,7 +12,7 @@ if " " in inp:
 new_inp = inp.replace(" ", "")
 
 for i in new_inp:
-    if (i in ('A', 'a', 'e', 'E', 'i', 'I', 'o', '0' , 'u' , 'U')):
+    if (i in ('A', 'a', 'e', 'E', 'i', 'I', 'o', 'O' , 'u' , 'U')):
         vowel_num += 1
         
     if (i in ('B', 'b', 'C', 'c', 'D', 'd', 'F', 'f', 'G', 'g', 'H', 'h', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'P', 'p', 'Q', 'q', 'R', 'r', 'S', 's', 'T', 't', 'V', 'v', 'W', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z')):
@@ -21,7 +21,7 @@ for i in new_inp:
     if(i in ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')):
         number_num += 1
         
-    if (i not in ('0', '1', '2', '3','4','5','6','7','8','9','A', 'a', 'e', 'E', 'i', 'I', 'o', '0' , 'u' , 'U','B', 'b', 'C', 'c', 'D', 'd', 'F', 'f', 'G', 'g', 'H', 'h', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'P', 'p', 'Q', 'q', 'R', 'r', 'S', 's', 'T', 't', 'V', 'v', 'W', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z')):
+    if (i not in ('0', '1', '2', '3','4','5','6','7','8','9','A', 'a', 'e', 'E', 'i', 'I', 'o', 'O' , 'u' , 'U','B', 'b', 'C', 'c', 'D', 'd', 'F', 'f', 'G', 'g', 'H', 'h', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'P', 'p', 'Q', 'q', 'R', 'r', 'S', 's', 'T', 't', 'V', 'v', 'W', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z')):
         special_num += 1
 
 print("Number of spaces in the string: ", space_num)
