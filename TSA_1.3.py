@@ -35,8 +35,8 @@ k = 1
 while b < 8:
      
     while k <= b:
-            print (b, end = "")
-            k += 1
+        print (b, end = "")
+        k += 1
             
     b += 2
     print(" ")
