@@ -16,8 +16,6 @@ for i in new_inp:
     else:
         only_others = i.replace(i, "")
         
-print("Sum of the digits in the string: " + only_numbers)
-
 for i in only_numbers:
     
     total_sum += int(i)
