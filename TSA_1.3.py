@@ -32,6 +32,8 @@ b = 1
 
 k = 1
 
+p = 1
+
 while b < 8:
     
     while k <= b:
@@ -44,7 +46,10 @@ while b < 8:
             
         k += 1
 
-    if b % 2 != 0 or b == 6:  
+    if b % 2 == 0 and b != 6:
+        p += 1
+        
+    elif b % 2 != 0 or b == 6:  
         print(" ")  
 
     b += 1
