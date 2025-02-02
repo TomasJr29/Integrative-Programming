@@ -33,13 +33,22 @@ b = 1
 k = 1
 
 while b < 8:
-     
+    
     while k <= b:
-        print (b, end = "")
-        k += 1
+        
+        if b % 2 == 0 and b != 6:
+            break  
+        
+        else:
+            print(b, end = "")  
             
-    b += 2
-    print(" ")
+        k += 1
+
+    if b % 2 != 0 or b == 6:  
+        print(" ")  
+
+    b += 1
+    
     k = 1
 
 print(" ")
