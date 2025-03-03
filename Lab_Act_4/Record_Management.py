@@ -88,21 +88,25 @@ while check != 7:
             if check_2 == 1:
                 
                 with open(filename1, "r") as data:
-                    records = str(data.readlines()).strip().split("\n\n")
+                    records = data.read().strip().split("\n\n")
                     student_data =  records
                     result = []
                     for row in student_data:
-                        result.append(float(row[-5:-3])) 
-                    sorted_records = sorted(result, key = lambda x: x[1], reverse = True) 
+                        result.append(row[10]) 
+                    sorted_records = sorted(result, key = lambda x: x[2], reverse = True) 
                     for record in sorted_records:
                         print(str(record).strip() + "\n --------------------------------")
                     
             elif check_2 == 2:
                 with open(filename1, "r") as data:
-                    records = data.read().strip().split(" --------------------------------\n")
-                    sorted_records = sorted(records, key = lambda x: x[-5:-1], reverse = True)
+                    records = data.read().strip().split("\n\n")
+                    student_data =  records
+                    result = []
+                    for row in student_data:
+                        result.append(row[-5:-3]) 
+                    sorted_records = sorted(result, key = lambda x: x[1], reverse = True) 
                     for record in sorted_records:
-                        print(record.strip() + "\n --------------------------------")
+                        print(str(record).strip() + "\n --------------------------------")
         
         
     elif check == 3:
